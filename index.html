@@ -1,5 +1,198 @@
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fate √order</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <style>
+  body {
+    background-image: url("img/bg.png");
+    background-size:cover;
+  }
+    * {
+      font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    }
+    div.title-logo {
+      margin: 0 2em;
+    }
+    p.introduction {
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      margin: 2em;
+      padding: 2em;
+      font-style: italic;
+    }
+    #footer {
+      background-color: #666;
+    }
+    #footer p {
+      margin: 0.5em 3em;
+      color: white;
+    }
+    table.game {
+      margin-bottom: 15px;
+    }
+    table.game td {
+      padding: 0px 4px;
+      border-style: none;
+    }
+    table.game td a {
+      text-decoration: none !important;
+    }
+    span.price {
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
-  第二部室ホームページ予定地
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="">
+      <img src="img/circle_logo.png">
+    </a>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        トップ
+      </a>
+      <a class="navbar-item" href="rule/">
+        ルール
+      </a>
+      <a class="navbar-item" href="https://twitter.com/dai2bushitsu">
+        Twitter
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="columns">
+  <div class="column is-full">
+    <img src="img/background.png">
+  </div>
+</div>
+<div class="columns">
+  <div class="column is-half is-offset-one-quarter">
+    <div class="title-logo">
+      <img src="img/title_logo.png">
+    </div>
+  </div>
+</div>
+<div class="columns">
+  <div class="column is-half is-offset-one-quarter">
+    <p class="is-large introduction">
+      人類が紡いできた歴史事象が突如としてそれぞれの関連性を失い無秩序な状態になってしまった。人理崩壊を食い止めるため、他のマスターと協力してサーヴァントと共に歴史事象の順序《order》を正し、人理に秩序《order》を取り戻せ!!<br>
+      ―それは、過去を取り戻す物語。
+    </p>
+  </div>
+</div>
+<div class="columns">
+  <div class="column is-4 is-offset-2">
+    <div class="tile">
+      <article class="tile is-child notification">
+        <div class="content">
+          <img src="img/box.jpg">
+        </div>
+        <p class="subtitle">頒布情報</p>
+        <div class="content">
+          コミックマーケット 95<br>
+          2日目 ( 2019/12/30 日曜日)<br>
+          西ゆ32b<br>
+          <span class="price">価格 2,500円</span>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="column is-4">
+    <div class="tile">
+      <article class="tile is-child notification">
+        <p class="subtitle">協力型カードゲーム</p>
+        <div class="content">
+          <table class="game">
+            <tr>
+              <td>プレイ人数</td>
+              <td>2 - 5 人</td>
+            </tr>
+            <tr>
+              <td>プレイ時間</td>
+              <td>15 - 20 分</td>
+            </tr>
+            <tr>
+              <td>カード枚数</td>
+              <td>120枚</td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+        <p class="subtitle">イラスト</p>
+        <div class="content">
+          <table class="game">
+            <tr>
+              <td>
+                <a href="https://twitter.com/dero_ri">derori</a>
+              </td>
+              <td>
+                <a href="https://twitter.com/moorioka">rioka</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://twitter.com/annojyouharuto">安乃条はると</a>
+              </td>
+              <td>
+                <a href="https://twitter.com/EIRRI">エイリゾ</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://twitter.com/ctv0305">風実そーる</a>
+              </td>
+              <td>
+                <a href="https://twitter.com/nana_kaguraaa">ななかぐら</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://twitter.com/vulpese">ボルゾイくゆ</a>
+              </td>
+              <td>
+                <a href="https://twitter.com/monobe_tsukuri">ものべ</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </article>
+    </div>
+    <div class="column is-2">
+    </div>
+  </div>
+</div>
+<div id="footer" class="columns">
+  <div class="column is-full">
+    <p class="is-medium">
+      ©第二部室
+    </p>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+});
+</script>
 </body>
 </html>
